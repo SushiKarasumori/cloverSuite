@@ -1,0 +1,39 @@
+general:
+  permissions:
+    reload: 'clover.reload'
+    staffchat: 'clover.staffChat'
+  messages:
+    no-permissions: ' &cYou are not allowed to do this.'
+    website: ' &9A website'
+    discord: ' &9A Discord server'
+
+applications:
+  enabled: true
+  permissions:
+    apply: 'clover.apply'
+    notifications: 'clover.notifyApps'
+    check: 'clover.checkApps'
+    open: 'clover.openApps'
+    close: 'clover.closeApps'
+    reapply: 'clover.reapply'
+  messages:
+    questions: ' &3%question%'
+    applications-closed: ' &cApplications are currently closed.'
+    application-end: ' &cThank you for your application. It will be reviewed by staff shortly.'
+    application-accept: ' &aYour application has been accepted!'
+    application-deny: ' &cYour application has been denied.'
+    already-applied: ' &cYou have already applied. It will be reviewed shortly.'
+    reapply-deny: ' &cAlready applied. You may reapply in %cooldown% seconds.'
+    reapply-allow: ' &aYou may now reapply. /apply'
+    notification: ' &d%notification%'
+  settings:
+    reapply:
+      enabled: false
+      cooldown: 300
+    accept-commands:
+      - 'msg %player% &bYour application has been accepted!'
+    deny-commands:
+      - 'msg %player% &cSorry, but your application has been denied...'
+  questions:
+    - 'What are you applying for?'
+    - 'Why should we accept you?'

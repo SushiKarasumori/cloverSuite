@@ -1,0 +1,17 @@
+package me.karasumori.cloversuite.commands;
+
+import me.karasumori.cloversuite.utils.MessageUtil;
+
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+
+public class WebsiteCommand implements CommandExecutor {
+    public boolean onCommand(CommandSender s, Command cmd, String label, String[] args) {
+        if (!cmd.getName().equalsIgnoreCase("website")) return false;
+
+        s.sendMessage(MessageUtil.getWebsite());
+
+        return false;
+    }
+}

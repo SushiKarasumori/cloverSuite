@@ -1,0 +1,22 @@
+name: CloverSuite
+version: ${project.version}
+main: me.karasumori.cloversuite.Main
+api-version: 1.16
+authors: [ SushiKarasumori ]
+description: Some gizmos for the Clover Fields Minecraft server.
+
+commands:
+  clover:
+    description: Staff utilities command for Clover Suite.
+  apply:
+    description: User command to start an application.
+  portal:
+    description: Displays Nether cords if in the overworld and vice versa.
+  a:
+    description: Sends text typed after /a to admin chat or toggles admin chat if /a is sent alone.
+  website:
+    aliases: [site]
+    description: Displays a website link.
+  discord:
+    aliases: [voice]
+    description: Displays a Discord invite.
